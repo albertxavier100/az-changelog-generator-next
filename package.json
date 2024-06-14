@@ -22,7 +22,8 @@
   "license": "ISC",
   "dependencies": {
     "@azure-tools/openapi-tools-common": "^1.2.2",
-    "@typescript-eslint/types": "^7.13.0"
+    "@typescript-eslint/types": "^7.13.0",
+    "commander": "^12.1.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.13.0",
