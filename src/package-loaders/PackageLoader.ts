@@ -1,7 +1,5 @@
-import { PackageContext } from './PackageContext';
+import { PackageContext } from './contexts/PackageContext';
 
-export class PackageLoader {
-    constructor(packageRootPath: string) { }
-    
-    
+export interface PackageLoader {
+  load(): Promise<PackageContext>;
 }

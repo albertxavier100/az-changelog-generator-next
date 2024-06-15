@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "test:e2e:hlc2mc",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "program": "${workspaceFolder}/src/index.ts",
+        "args":["--latest-package-root", "./src/tests/e2e/high-level-client-to-modular-client/latest-package", "--upcoming-package-root", "./src/tests/e2e/high-level-client-to-modular-client/upcoming-package"],
+        "request": "launch",
+        "restart": true,
+        "runtimeExecutable": "ts-node",
+        "type": "node"
+      }
+    ]
+  }
