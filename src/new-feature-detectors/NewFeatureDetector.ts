@@ -1,3 +1,3 @@
-export interface NewFeatureDetector { 
-    detect(): NewFeatureContext;
+export interface NewFeatureDetector {
+  detect(): NewFeatureContext;
 }

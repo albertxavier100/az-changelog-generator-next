@@ -9,12 +9,13 @@ const options = program.opts();
 
 // TODO: only support azure code gen client for now.
 const azurePackageLoaderFactory = new AzurePackageLoaderFactory();
-const upcomingPackageMeta = createAzurePackageMeta(options.upcomingPackageRoot);
+// const upcomingPackageMeta = createAzurePackageMeta(options.upcomingPackageRoot);
 const latestPackageMeta = createAzurePackageMeta(options.latestPackageRoot);
 // TODO: to impl
 
 // TODO: figure out a better name
 async function createAzurePackageMeta(packageRootPath: string): Promise<void> {
   const loader = await azurePackageLoaderFactory.create(packageRootPath);
+  const context = await loader.load();
   // TODO: to impl
 }

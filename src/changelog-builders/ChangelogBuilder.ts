@@ -1,3 +1,1 @@
-export interface ChangelogGenerator {
-
-}
+export interface ChangelogGenerator {}

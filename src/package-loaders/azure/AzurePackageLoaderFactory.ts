@@ -4,6 +4,7 @@ import { PackageLoader } from '../PackageLoader';
 import { PackageLoaderFactory } from '../PackageLoaderFactory';
 import path from 'path';
 import { AzureHighLevelClientPackageLoader } from './AzureHighLevelClientPackageLoader';
+import { AzureHighLevelClientVersionGenerator } from '../../package-version-generators/azure/AzureHighLevelClientVersionGenerator';
 
 export class AzurePackageLoaderFactory implements PackageLoaderFactory {
   constructor() {}
@@ -13,10 +14,13 @@ export class AzurePackageLoaderFactory implements PackageLoaderFactory {
     const parsed = await loadPackageJson(packageJsonPath);
     const sdkType = this.#getSdkType(parsed);
 
-    // TODO: add other client packge loader
+    // TODO: add other client package loader
     switch (sdkType) {
       case SDKType.HighLevelClient:
-        return new AzureHighLevelClientPackageLoader(packageRoot, sdkType);
+        const apiRelationGenerator = null;
+        const changelogFormatter = null;
+        const versionGenerator = new AzureHighLevelClientVersionGenerator(packageRoot);
+        return new AzureHighLevelClientPackageLoader(versionGenerator, apiRelationGenerator, changelogFormatter);
       case SDKType.ModularClient:
       case SDKType.RestLevelClient:
       case SDKType.Track1Client:
