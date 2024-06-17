@@ -11,6 +11,9 @@ export class DefaultApiDocumentCodeExtractor implements ApiDocumentCodeExtractor
         codeBlocks.push(c.literal);
       }
     }
+    if (codeBlocks.length !== 1) {
+      throw new Error(`High level client's API document should contains 1 code block, but got ${codeBlocks.length}`);
+    }
     return codeBlocks;
   }
 }

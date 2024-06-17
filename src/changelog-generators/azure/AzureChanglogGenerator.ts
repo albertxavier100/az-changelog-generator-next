@@ -1,6 +1,6 @@
 import { SDKType } from '../../common/SDKType';
-import { AzurePackageContext } from '../../package-loaders/azure/AzureHighLevelClientPackageLoader';
 import { AzurePackageLoaderFactory } from '../../package-loaders/azure/AzurePackageLoaderFactory';
+import { AzurePackageContext } from '../../package-loaders/contexts/azure/AzurePackageContext';
 
 // TODO: add interface
 export class AzureChanglogGenerator {

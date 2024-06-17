@@ -10,7 +10,7 @@ import { ApiViewType } from '../../common/ApiViewType';
 import { AzurePackageContext } from '../contexts/azure/AzurePackageContext';
 import { getRootApiDocumentPath } from './common/utils';
 
-export class AzureHighLevelClientPackageLoader implements PackageLoader {
+export class AzureRestLevelClientPackageLoader implements PackageLoader {
   #versionGenerator: PackageVersionGenerator;
   #apiDocumentCodeExtractor: ApiDocumentCodeExtractor;
   #packageRoot: string;
@@ -31,6 +31,7 @@ export class AzureHighLevelClientPackageLoader implements PackageLoader {
     this.#apiDocumentCodeExtractor = apiDocumentCodeExtractor;
   }
 
+  // TODO: consider reuse with high level client package loader
   async load(): Promise<AzurePackageContext> {
     const version = this.#versionGenerator.Generate();
     const apiDocumentPath = getRootApiDocumentPath(this.#packageRoot, this.#packageName, this.#sdkType);
