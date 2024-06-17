@@ -9,7 +9,7 @@ class ChangelogEx {
     #oldApiViewPath: string;
     #newApiViewPath: string;
     // TODO: use right type
-    #oldAST: any;7
+    #oldAST: any;
     #newAST: any;
 
     constructor(oldApiViewPath: string, newApiViewPath: string) {
@@ -22,8 +22,13 @@ class ChangelogEx {
         const newCode = await this.#readCodeFromApiView(this.#newApiViewPath);
         this.#oldAST = parse(oldCode);
         this.#newAST = parse(newCode);
+        
         console.log("old ast", this.#oldAST)
         console.log("new ast", this.#newAST)
+        
+        // dev:
+        const ast = parse(oldCode);
+        ast.body.filter()
     }
 
     async #readCodeFromApiView(path: string): Promise<string> {

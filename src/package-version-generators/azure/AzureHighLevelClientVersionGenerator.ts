@@ -10,9 +10,9 @@ export class AzureHighLevelClientVersionGenerator implements PackageVersionGener
   constructor(packageRoot: string) {
     this.#packageRoot = packageRoot;
   }
-  
+
   Generate(): string {
-    throw new Error('Method not implemented.');
+    return 'TODO version';
   }
 
   // async #readApiView(): Promise<void> {
