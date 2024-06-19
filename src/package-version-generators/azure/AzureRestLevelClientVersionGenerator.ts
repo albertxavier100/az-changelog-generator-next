@@ -5,14 +5,14 @@ import { SDKType } from '../../common/SDKType';
 import { readFile, parseMarkdown, iterate } from '@azure-tools/openapi-tools-common';
 import { ApiVersionType } from '../../common/ApiVersionType';
 
-export class AzureHighLevelClientVersionGenerator implements PackageVersionGenerator {
+export class AzureRestLevelClientVersionGenerator implements PackageVersionGenerator {
   #packageRoot: string;
   constructor(packageRoot: string) {
     this.#packageRoot = packageRoot;
   }
 
   Generate(): string {
-    return 'TODO high level client version';
+    return 'TODO rest level client version';
   }
 
   // async #readApiView(): Promise<void> {

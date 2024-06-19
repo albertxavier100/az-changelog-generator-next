@@ -6,6 +6,10 @@ import path from 'path';
 import { AzureHighLevelClientPackageLoader } from './AzureHighLevelClientPackageLoader';
 import { AzureHighLevelClientVersionGenerator } from '../../package-version-generators/azure/AzureHighLevelClientVersionGenerator';
 import { DefaultApiDocumentCodeExtractor } from '../api-document-code-extractors/DefaultApiDocumentCodeExtractor';
+import { AzureRestLevelClientVersionGenerator } from '../../package-version-generators/azure/AzureRestLevelClientVersionGenerator';
+import { AzureRestLevelClientPackageLoader } from './AzureRestLevelClientPackageLoader';
+import { version } from '@typescript-eslint/parser';
+import { AzureRestLevelClientApiRelationGenerator } from '../../changelog-generators/api-relation-generators/azure/AzureRestLevelClientApiRelationGenerator';
 
 export class AzurePackageLoaderFactory implements PackageLoaderFactory {
   constructor() {}
@@ -15,12 +19,12 @@ export class AzurePackageLoaderFactory implements PackageLoaderFactory {
     const parsed = await loadPackageJson(packageJsonPath);
     const sdkType = this.#getSdkType(parsed);
     const name = parsed.name;
+    const apiDocumentCodeExtracor = new DefaultApiDocumentCodeExtractor();
 
     // TODO: add other client package loader
     switch (sdkType) {
-      case SDKType.HighLevelClient:
+      case SDKType.HighLevelClient: {
         const versionGenerator = new AzureHighLevelClientVersionGenerator(packageRoot);
-        const apiDocumentCodeExtracor = new DefaultApiDocumentCodeExtractor();
         return new AzureHighLevelClientPackageLoader(
           packageRoot,
           name,
@@ -28,8 +32,18 @@ export class AzurePackageLoaderFactory implements PackageLoaderFactory {
           versionGenerator,
           apiDocumentCodeExtracor
         );
+      }
+      case SDKType.RestLevelClient: {
+        const versionGenerator = new AzureRestLevelClientVersionGenerator(packageRoot);
+        return new AzureRestLevelClientPackageLoader(
+          packageRoot,
+          name,
+          sdkType,
+          versionGenerator,
+          apiDocumentCodeExtracor
+        );
+      }
       case SDKType.ModularClient:
-      case SDKType.RestLevelClient:
       case SDKType.Track1Client:
       default:
         throw new Error(`Not supported sdk type: ${sdkType}`);

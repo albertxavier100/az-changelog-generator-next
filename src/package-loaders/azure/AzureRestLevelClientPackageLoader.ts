@@ -44,6 +44,7 @@ export class AzureRestLevelClientPackageLoader implements PackageLoader {
       [ApiViewType.ApiLayer]: [],
       [ApiViewType.RestLayer]: []
     };
+
     return { name, version, apiView, sdkType };
   }
 }

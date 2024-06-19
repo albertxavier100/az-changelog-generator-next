@@ -1,6 +1,7 @@
 import { SDKType } from '../../common/SDKType';
 import { AzurePackageLoaderFactory } from '../../package-loaders/azure/AzurePackageLoaderFactory';
 import { AzurePackageContext } from '../../package-loaders/contexts/azure/AzurePackageContext';
+import { AzureRestLevelClientApiRelationGenerator } from '../api-relation-generators/azure/AzureRestLevelClientApiRelationGenerator';
 
 // TODO: add interface
 export class AzureChanglogGenerator {
@@ -17,6 +18,8 @@ export class AzureChanglogGenerator {
     const upcomingContext = await this.#createPackageContext(this.#upcomingPackageRoot);
     const latestContext = await this.#createPackageContext(this.#latestPackageRoot);
     this.#ensureAzurePackageMigrationValid(latestContext.sdkType, upcomingContext.sdkType);
+    new AzureRestLevelClientApiRelationGenerator(upcomingContext).generate();
+    new AzureRestLevelClientApiRelationGenerator(latestContext).generate();
     // TODO
     return '';
   }
