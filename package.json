@@ -18,7 +18,8 @@
     "prettier-watch": "run-script-os",
     "prettier-watch:win32": "onchange \"src/**/*.ts\" -- prettier --write {{changed}}",
     "prettier-watch:darwin:linux": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
-    "prettier-watch:default": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
+    "prettier-watch:default": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
+    "json-schema:generate": "typescript-json-schema doc/schemas/tsconfig.json ClientMetaData --out doc/schemas/client-meta-data.schema.json"
   },
   "author": "",
   "license": "ISC",
@@ -30,7 +31,10 @@
     "commander": "^12.1.0"
   },
   "devDependencies": {
+    "@azure-rest/core-client": "^2.0.0",
+    "@azure/core-client": "^1.9.2",
     "@types/eslint": "^8.56.10",
+    "@types/to-json-schema": "^0.2.4",
     "@typescript-eslint/eslint-plugin": "^7.13.0",
     "@typescript-eslint/parser": "^7.13.0",
     "eslint-config-prettier": "^9.1.0",
@@ -42,6 +46,7 @@
     "rimraf": "^5.0.7",
     "run-script-os": "^1.1.6",
     "ts-node": "^10.9.2",
+    "typescript-json-schema": "^0.64.0",
     "vitest": "^1.6.0"
   },
   "husky": {
