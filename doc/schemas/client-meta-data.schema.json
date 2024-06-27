@@ -40,9 +40,6 @@
                 "override": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -241,9 +238,6 @@
                 },
                 "override": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -548,9 +542,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -617,9 +608,6 @@
                 },
                 "optional": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -799,9 +787,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -840,9 +825,6 @@
                 },
                 "operator": {
                     "$ref": "#/definitions/ValueOf"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -886,9 +868,6 @@
                 "optional": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -925,9 +904,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -957,9 +933,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -1136,9 +1109,6 @@
                 "operator": {
                     "$ref": "#/definitions/ValueOf_1"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -1176,36 +1146,6 @@
                 }
             ]
         },
-        "BlockComment": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Block",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "BlockStatement": {
             "properties": {
                 "body": {
@@ -1217,9 +1157,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -1247,9 +1184,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -1282,36 +1216,6 @@
             },
             "type": "object"
         },
-        "BooleanToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Boolean",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "BreakStatement": {
             "properties": {
                 "label": {
@@ -1327,9 +1231,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -1369,9 +1270,6 @@
                 },
                 "optional": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -1555,9 +1453,6 @@
                         }
                     ]
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -1604,9 +1499,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -1639,9 +1531,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -1699,9 +1588,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -1869,9 +1755,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -2088,9 +1971,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -2265,16 +2145,6 @@
             },
             "type": "object"
         },
-        "Comment": {
-            "anyOf": [
-                {
-                    "$ref": "#/definitions/BlockComment"
-                },
-                {
-                    "$ref": "#/definitions/LineComment"
-                }
-            ]
-        },
         "ConditionalExpression": {
             "properties": {
                 "alternate": {
@@ -2286,9 +2156,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -2330,9 +2197,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -2359,9 +2223,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -2393,9 +2254,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -2420,7 +2278,10 @@
         "DefaultExportDeclarations": {
             "anyOf": [
                 {
-                    "$ref": "#/definitions/TSInterfaceDeclaration"
+                    "$ref": "#/definitions/FunctionDeclarationWithName"
+                },
+                {
+                    "$ref": "#/definitions/FunctionDeclarationWithOptionalName"
                 },
                 {
                     "$ref": "#/definitions/ArrayExpression"
@@ -2549,12 +2410,6 @@
                     "$ref": "#/definitions/ClassDeclarationWithOptionalName"
                 },
                 {
-                    "$ref": "#/definitions/FunctionDeclarationWithName"
-                },
-                {
-                    "$ref": "#/definitions/FunctionDeclarationWithOptionalName"
-                },
-                {
                     "$ref": "#/definitions/TSDeclareFunctionNoDeclare"
                 },
                 {
@@ -2562,6 +2417,9 @@
                 },
                 {
                     "$ref": "#/definitions/TSEnumDeclaration"
+                },
+                {
+                    "$ref": "#/definitions/TSInterfaceDeclaration"
                 },
                 {
                     "$ref": "#/definitions/TSModuleDeclarationGlobal"
@@ -2626,9 +2484,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -2658,9 +2513,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -2731,9 +2583,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -2772,9 +2621,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -2831,9 +2677,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -2895,9 +2738,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -2958,9 +2798,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -3007,9 +2844,6 @@
                 },
                 "local": {
                     "$ref": "#/definitions/Identifier"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -3171,9 +3005,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -3206,9 +3037,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -3512,9 +3340,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -3680,9 +3505,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -3965,6 +3787,16 @@
             },
             "type": "object"
         },
+        "FunctionDeclaration": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/FunctionDeclarationWithName"
+                },
+                {
+                    "$ref": "#/definitions/FunctionDeclarationWithOptionalName"
+                }
+            ]
+        },
         "FunctionDeclarationWithName": {
             "properties": {
                 "async": {
@@ -4003,9 +3835,6 @@
                         "$ref": "#/definitions/Parameter"
                     },
                     "type": "array"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -4082,9 +3911,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -4159,9 +3985,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -4209,9 +4032,6 @@
                 "optional": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -4236,42 +4056,12 @@
             },
             "type": "object"
         },
-        "IdentifierToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Identifier",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "IfStatement": {
             "properties": {
                 "alternate": {
                     "anyOf": [
                         {
-                            "$ref": "#/definitions/TSInterfaceDeclaration"
+                            "$ref": "#/definitions/FunctionDeclarationWithName"
                         },
                         {
                             "$ref": "#/definitions/BlockStatement"
@@ -4304,9 +4094,6 @@
                             "$ref": "#/definitions/ExportNamedDeclarationWithSource"
                         },
                         {
-                            "$ref": "#/definitions/FunctionDeclarationWithName"
-                        },
-                        {
                             "$ref": "#/definitions/TSDeclareFunctionNoDeclare"
                         },
                         {
@@ -4317,6 +4104,9 @@
                         },
                         {
                             "$ref": "#/definitions/TSImportEqualsDeclaration"
+                        },
+                        {
+                            "$ref": "#/definitions/TSInterfaceDeclaration"
                         },
                         {
                             "$ref": "#/definitions/TSModuleDeclarationGlobal"
@@ -4408,9 +4198,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -4465,9 +4252,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -4530,9 +4314,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -4573,9 +4354,6 @@
                 },
                 "local": {
                     "$ref": "#/definitions/Identifier"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -4734,9 +4512,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -4777,9 +4552,6 @@
                 "local": {
                     "$ref": "#/definitions/Identifier"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -4816,9 +4588,6 @@
                 "local": {
                     "$ref": "#/definitions/Identifier"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -4840,6 +4609,14 @@
             },
             "type": "object"
         },
+        "Interface": {
+            "properties": {
+                "#declaration": {
+                    "$ref": "#/definitions/FunctionDeclaration"
+                }
+            },
+            "type": "object"
+        },
         "JSXAttribute": {
             "properties": {
                 "loc": {
@@ -4855,9 +4632,6 @@
                             "$ref": "#/definitions/JSXNamespacedName"
                         }
                     ]
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -4942,9 +4716,6 @@
                 "name": {
                     "$ref": "#/definitions/JSXTagNameExpression"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -4971,9 +4742,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -5021,9 +4789,6 @@
                 "openingElement": {
                     "$ref": "#/definitions/JSXOpeningElement"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -5050,9 +4815,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -5211,9 +4973,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -5253,9 +5012,6 @@
                 "openingFragment": {
                     "$ref": "#/definitions/JSXOpeningFragment"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -5286,9 +5042,6 @@
                 "name": {
                     "type": "string"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -5305,36 +5058,6 @@
                 },
                 "type": {
                     "const": "JSXIdentifier",
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
-        "JSXIdentifierToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "JSXIdentifier",
-                    "type": "string"
-                },
-                "value": {
                     "type": "string"
                 }
             },
@@ -5348,9 +5071,6 @@
                 },
                 "object": {
                     "$ref": "#/definitions/JSXTagNameExpression"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "property": {
                     "$ref": "#/definitions/JSXIdentifier"
@@ -5387,9 +5107,6 @@
                 },
                 "namespace": {
                     "$ref": "#/definitions/JSXIdentifier"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -5434,9 +5151,6 @@
                 "name": {
                     "$ref": "#/definitions/JSXTagNameExpression"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -5473,9 +5187,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -5505,9 +5216,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -5666,9 +5374,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -5709,9 +5414,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -5739,66 +5441,6 @@
             },
             "type": "object"
         },
-        "JSXTextToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "JSXText",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
-        "KeywordToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Keyword",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "LabeledStatement": {
             "properties": {
                 "body": {
@@ -5810,9 +5452,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -5948,9 +5587,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -6115,9 +5751,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -6134,36 +5767,6 @@
                 },
                 "type": {
                     "const": "VariableDeclarator",
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
-        "LineComment": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Line",
-                    "type": "string"
-                },
-                "value": {
                     "type": "string"
                 }
             },
@@ -6208,9 +5811,6 @@
                     ],
                     "type": "string"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -6250,9 +5850,6 @@
                 },
                 "optional": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "property": {
                     "$ref": "#/definitions/Expression"
@@ -6294,9 +5891,6 @@
                 "optional": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "property": {
                     "anyOf": [
                         {
@@ -6336,9 +5930,6 @@
                 },
                 "meta": {
                     "$ref": "#/definitions/Identifier"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "property": {
                     "$ref": "#/definitions/Identifier"
@@ -6405,9 +5996,6 @@
                 },
                 "override": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -6485,9 +6073,6 @@
                 "override": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -6525,19 +6110,16 @@
         "NamedExportDeclarations": {
             "anyOf": [
                 {
-                    "$ref": "#/definitions/TSInterfaceDeclaration"
+                    "$ref": "#/definitions/FunctionDeclarationWithName"
+                },
+                {
+                    "$ref": "#/definitions/FunctionDeclarationWithOptionalName"
                 },
                 {
                     "$ref": "#/definitions/ClassDeclarationWithName"
                 },
                 {
                     "$ref": "#/definitions/ClassDeclarationWithOptionalName"
-                },
-                {
-                    "$ref": "#/definitions/FunctionDeclarationWithName"
-                },
-                {
-                    "$ref": "#/definitions/FunctionDeclarationWithOptionalName"
                 },
                 {
                     "$ref": "#/definitions/TSDeclareFunctionNoDeclare"
@@ -6550,6 +6132,9 @@
                 },
                 {
                     "$ref": "#/definitions/TSImportEqualsDeclaration"
+                },
+                {
+                    "$ref": "#/definitions/TSInterfaceDeclaration"
                 },
                 {
                     "$ref": "#/definitions/TSModuleDeclarationGlobal"
@@ -6595,9 +6180,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -6625,606 +6207,11 @@
             },
             "type": "object"
         },
-        "Node": {
-            "anyOf": [
-                {
-                    "$ref": "#/definitions/TSInterfaceDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeAnnotation"
-                },
-                {
-                    "$ref": "#/definitions/AccessorPropertyComputedName"
-                },
-                {
-                    "$ref": "#/definitions/AccessorPropertyNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/ArrayExpression"
-                },
-                {
-                    "$ref": "#/definitions/ArrayPattern"
-                },
-                {
-                    "$ref": "#/definitions/ArrowFunctionExpression"
-                },
-                {
-                    "$ref": "#/definitions/AssignmentExpression"
-                },
-                {
-                    "$ref": "#/definitions/AssignmentPattern"
-                },
-                {
-                    "$ref": "#/definitions/AwaitExpression"
-                },
-                {
-                    "$ref": "#/definitions/BigIntLiteral"
-                },
-                {
-                    "$ref": "#/definitions/BinaryExpression"
-                },
-                {
-                    "$ref": "#/definitions/ObjectPattern"
-                },
-                {
-                    "$ref": "#/definitions/Identifier"
-                },
-                {
-                    "$ref": "#/definitions/BlockStatement"
-                },
-                {
-                    "$ref": "#/definitions/BooleanLiteral"
-                },
-                {
-                    "$ref": "#/definitions/BreakStatement"
-                },
-                {
-                    "$ref": "#/definitions/CallExpression"
-                },
-                {
-                    "$ref": "#/definitions/ChainExpression"
-                },
-                {
-                    "$ref": "#/definitions/ClassExpression"
-                },
-                {
-                    "$ref": "#/definitions/ConditionalExpression"
-                },
-                {
-                    "$ref": "#/definitions/FunctionExpression"
-                },
-                {
-                    "$ref": "#/definitions/ImportExpression"
-                },
-                {
-                    "$ref": "#/definitions/JSXElement"
-                },
-                {
-                    "$ref": "#/definitions/JSXFragment"
-                },
-                {
-                    "$ref": "#/definitions/NullLiteral"
-                },
-                {
-                    "$ref": "#/definitions/NumberLiteral"
-                },
-                {
-                    "$ref": "#/definitions/RegExpLiteral"
-                },
-                {
-                    "$ref": "#/definitions/StringLiteral"
-                },
-                {
-                    "$ref": "#/definitions/TemplateLiteral"
-                },
-                {
-                    "$ref": "#/definitions/LogicalExpression"
-                },
-                {
-                    "$ref": "#/definitions/MemberExpressionComputedName"
-                },
-                {
-                    "$ref": "#/definitions/MemberExpressionNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/MetaProperty"
-                },
-                {
-                    "$ref": "#/definitions/NewExpression"
-                },
-                {
-                    "$ref": "#/definitions/ObjectExpression"
-                },
-                {
-                    "$ref": "#/definitions/SequenceExpression"
-                },
-                {
-                    "$ref": "#/definitions/Super"
-                },
-                {
-                    "$ref": "#/definitions/TaggedTemplateExpression"
-                },
-                {
-                    "$ref": "#/definitions/ThisExpression"
-                },
-                {
-                    "$ref": "#/definitions/TSAsExpression"
-                },
-                {
-                    "$ref": "#/definitions/TSInstantiationExpression"
-                },
-                {
-                    "$ref": "#/definitions/TSNonNullExpression"
-                },
-                {
-                    "$ref": "#/definitions/TSSatisfiesExpression"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeAssertion"
-                },
-                {
-                    "$ref": "#/definitions/UnaryExpression"
-                },
-                {
-                    "$ref": "#/definitions/UpdateExpression"
-                },
-                {
-                    "$ref": "#/definitions/YieldExpression"
-                },
-                {
-                    "$ref": "#/definitions/SpreadElement"
-                },
-                {
-                    "$ref": "#/definitions/CatchClause"
-                },
-                {
-                    "$ref": "#/definitions/ClassBody"
-                },
-                {
-                    "$ref": "#/definitions/ClassDeclarationWithName"
-                },
-                {
-                    "$ref": "#/definitions/ClassDeclarationWithOptionalName"
-                },
-                {
-                    "$ref": "#/definitions/MethodDefinitionComputedName"
-                },
-                {
-                    "$ref": "#/definitions/MethodDefinitionNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/PropertyDefinitionComputedName"
-                },
-                {
-                    "$ref": "#/definitions/PropertyDefinitionNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/StaticBlock"
-                },
-                {
-                    "$ref": "#/definitions/TSAbstractAccessorPropertyComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSAbstractAccessorPropertyNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSAbstractMethodDefinitionComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSAbstractMethodDefinitionNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSAbstractPropertyDefinitionComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSAbstractPropertyDefinitionNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSIndexSignature"
-                },
-                {
-                    "$ref": "#/definitions/PrivateIdentifier"
-                },
-                {
-                    "$ref": "#/definitions/ContinueStatement"
-                },
-                {
-                    "$ref": "#/definitions/DebuggerStatement"
-                },
-                {
-                    "$ref": "#/definitions/ExportAllDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/ExportDefaultDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/ExportNamedDeclarationWithoutSourceWithMultiple"
-                },
-                {
-                    "$ref": "#/definitions/ExportNamedDeclarationWithoutSourceWithSingle"
-                },
-                {
-                    "$ref": "#/definitions/ExportNamedDeclarationWithSource"
-                },
-                {
-                    "$ref": "#/definitions/FunctionDeclarationWithName"
-                },
-                {
-                    "$ref": "#/definitions/FunctionDeclarationWithOptionalName"
-                },
-                {
-                    "$ref": "#/definitions/TSDeclareFunctionNoDeclare"
-                },
-                {
-                    "$ref": "#/definitions/TSDeclareFunctionWithDeclare"
-                },
-                {
-                    "$ref": "#/definitions/TSEnumDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/TSImportEqualsDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/TSModuleDeclarationGlobal"
-                },
-                {
-                    "$ref": "#/definitions/TSModuleDeclarationModuleWithIdentifierId"
-                },
-                {
-                    "$ref": "#/definitions/TSModuleDeclarationModuleWithStringIdDeclared"
-                },
-                {
-                    "$ref": "#/definitions/TSModuleDeclarationModuleWithStringIdNotDeclared"
-                },
-                {
-                    "$ref": "#/definitions/TSModuleDeclarationNamespace"
-                },
-                {
-                    "$ref": "#/definitions/TSNamespaceExportDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeAliasDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/Decorator"
-                },
-                {
-                    "$ref": "#/definitions/LetOrConstOrVarDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/UsingInForOfDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/UsingInNormalContextDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/RestElement"
-                },
-                {
-                    "$ref": "#/definitions/DoWhileStatement"
-                },
-                {
-                    "$ref": "#/definitions/EmptyStatement"
-                },
-                {
-                    "$ref": "#/definitions/TSQualifiedName"
-                },
-                {
-                    "$ref": "#/definitions/ExportSpecifier"
-                },
-                {
-                    "$ref": "#/definitions/ExpressionStatement"
-                },
-                {
-                    "$ref": "#/definitions/ForInStatement"
-                },
-                {
-                    "$ref": "#/definitions/ForOfStatement"
-                },
-                {
-                    "$ref": "#/definitions/ForStatement"
-                },
-                {
-                    "$ref": "#/definitions/TSEmptyBodyFunctionExpression"
-                },
-                {
-                    "$ref": "#/definitions/IfStatement"
-                },
-                {
-                    "$ref": "#/definitions/ImportAttribute"
-                },
-                {
-                    "$ref": "#/definitions/ImportDefaultSpecifier"
-                },
-                {
-                    "$ref": "#/definitions/ImportNamespaceSpecifier"
-                },
-                {
-                    "$ref": "#/definitions/ImportSpecifier"
-                },
-                {
-                    "$ref": "#/definitions/ImportDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/WhileStatement"
-                },
-                {
-                    "$ref": "#/definitions/JSXAttribute"
-                },
-                {
-                    "$ref": "#/definitions/JSXExpressionContainer"
-                },
-                {
-                    "$ref": "#/definitions/JSXSpreadChild"
-                },
-                {
-                    "$ref": "#/definitions/JSXText"
-                },
-                {
-                    "$ref": "#/definitions/JSXClosingElement"
-                },
-                {
-                    "$ref": "#/definitions/JSXClosingFragment"
-                },
-                {
-                    "$ref": "#/definitions/JSXEmptyExpression"
-                },
-                {
-                    "$ref": "#/definitions/JSXIdentifier"
-                },
-                {
-                    "$ref": "#/definitions/JSXMemberExpression"
-                },
-                {
-                    "$ref": "#/definitions/JSXNamespacedName"
-                },
-                {
-                    "$ref": "#/definitions/JSXOpeningElement"
-                },
-                {
-                    "$ref": "#/definitions/JSXOpeningFragment"
-                },
-                {
-                    "$ref": "#/definitions/JSXSpreadAttribute"
-                },
-                {
-                    "$ref": "#/definitions/LabeledStatement"
-                },
-                {
-                    "$ref": "#/definitions/LetOrConstOrVarDeclarator"
-                },
-                {
-                    "$ref": "#/definitions/Program"
-                },
-                {
-                    "$ref": "#/definitions/PropertyComputedName"
-                },
-                {
-                    "$ref": "#/definitions/PropertyNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/ReturnStatement"
-                },
-                {
-                    "$ref": "#/definitions/SwitchCase"
-                },
-                {
-                    "$ref": "#/definitions/SwitchStatement"
-                },
-                {
-                    "$ref": "#/definitions/TemplateElement"
-                },
-                {
-                    "$ref": "#/definitions/ThrowStatement"
-                },
-                {
-                    "$ref": "#/definitions/TryStatement"
-                },
-                {
-                    "$ref": "#/definitions/TSAbstractKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSAnyKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSArrayType"
-                },
-                {
-                    "$ref": "#/definitions/TSAsyncKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSBigIntKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSBooleanKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSCallSignatureDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/TSClassImplements"
-                },
-                {
-                    "$ref": "#/definitions/TSConditionalType"
-                },
-                {
-                    "$ref": "#/definitions/TSConstructorType"
-                },
-                {
-                    "$ref": "#/definitions/TSConstructSignatureDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/TSDeclareKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSEnumMemberComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSEnumMemberNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSExportAssignment"
-                },
-                {
-                    "$ref": "#/definitions/TSExportKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSExternalModuleReference"
-                },
-                {
-                    "$ref": "#/definitions/TSFunctionType"
-                },
-                {
-                    "$ref": "#/definitions/TSImportType"
-                },
-                {
-                    "$ref": "#/definitions/TSIndexedAccessType"
-                },
-                {
-                    "$ref": "#/definitions/TSInferType"
-                },
-                {
-                    "$ref": "#/definitions/TSInterfaceBody"
-                },
-                {
-                    "$ref": "#/definitions/TSInterfaceHeritage"
-                },
-                {
-                    "$ref": "#/definitions/TSIntersectionType"
-                },
-                {
-                    "$ref": "#/definitions/TSIntrinsicKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSLiteralType"
-                },
-                {
-                    "$ref": "#/definitions/TSMappedType"
-                },
-                {
-                    "$ref": "#/definitions/TSMethodSignatureComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSMethodSignatureNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSModuleBlock"
-                },
-                {
-                    "$ref": "#/definitions/TSNamedTupleMember"
-                },
-                {
-                    "$ref": "#/definitions/TSNeverKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSNullKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSNumberKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSObjectKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSOptionalType"
-                },
-                {
-                    "$ref": "#/definitions/TSParameterProperty"
-                },
-                {
-                    "$ref": "#/definitions/TSPrivateKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSPropertySignatureComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSPropertySignatureNonComputedName"
-                },
-                {
-                    "$ref": "#/definitions/TSProtectedKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSPublicKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSReadonlyKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSRestType"
-                },
-                {
-                    "$ref": "#/definitions/TSStaticKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSStringKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSSymbolKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSTemplateLiteralType"
-                },
-                {
-                    "$ref": "#/definitions/TSThisType"
-                },
-                {
-                    "$ref": "#/definitions/TSTupleType"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeLiteral"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeOperator"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeParameter"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeParameterDeclaration"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeParameterInstantiation"
-                },
-                {
-                    "$ref": "#/definitions/TSTypePredicate"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeQuery"
-                },
-                {
-                    "$ref": "#/definitions/TSTypeReference"
-                },
-                {
-                    "$ref": "#/definitions/TSUndefinedKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSUnionType"
-                },
-                {
-                    "$ref": "#/definitions/TSUnknownKeyword"
-                },
-                {
-                    "$ref": "#/definitions/TSVoidKeyword"
-                },
-                {
-                    "$ref": "#/definitions/UsingInForOfDeclarator"
-                },
-                {
-                    "$ref": "#/definitions/UsingInNomalConextDeclarator"
-                },
-                {
-                    "$ref": "#/definitions/WithStatement"
-                }
-            ]
-        },
         "NullLiteral": {
             "properties": {
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -7254,44 +6241,11 @@
             },
             "type": "object"
         },
-        "NullToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Null",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "NumberLiteral": {
             "properties": {
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -7320,44 +6274,11 @@
             },
             "type": "object"
         },
-        "NumericToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Numeric",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "ObjectExpression": {
             "properties": {
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "properties": {
                     "items": {
@@ -7414,9 +6335,6 @@
                 "optional": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "properties": {
                     "items": {
                         "anyOf": [
@@ -7468,9 +6386,15 @@
                     },
                     "type": "array"
                 },
+                "path": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
                 "responses": {
                     "additionalProperties": {
-                        "$ref": "#/definitions/TSInterfaceDeclaration"
+                        "$ref": "#/definitions/Interface"
                     },
                     "type": "object"
                 }
@@ -7535,9 +6459,6 @@
                 "name": {
                     "type": "string"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -7559,62 +6480,10 @@
             },
             "type": "object"
         },
-        "Program": {
-            "properties": {
-                "body": {
-                    "items": {
-                        "$ref": "#/definitions/ProgramStatement"
-                    },
-                    "type": "array"
-                },
-                "comments": {
-                    "items": {
-                        "$ref": "#/definitions/Comment"
-                    },
-                    "type": "array"
-                },
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "sourceType": {
-                    "enum": [
-                        "module",
-                        "script"
-                    ],
-                    "type": "string"
-                },
-                "tokens": {
-                    "items": {
-                        "$ref": "#/definitions/Token"
-                    },
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Program",
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "ProgramStatement": {
             "anyOf": [
                 {
-                    "$ref": "#/definitions/TSInterfaceDeclaration"
+                    "$ref": "#/definitions/FunctionDeclarationWithName"
                 },
                 {
                     "$ref": "#/definitions/BlockStatement"
@@ -7647,9 +6516,6 @@
                     "$ref": "#/definitions/ExportNamedDeclarationWithSource"
                 },
                 {
-                    "$ref": "#/definitions/FunctionDeclarationWithName"
-                },
-                {
                     "$ref": "#/definitions/TSDeclareFunctionNoDeclare"
                 },
                 {
@@ -7660,6 +6526,9 @@
                 },
                 {
                     "$ref": "#/definitions/TSImportEqualsDeclaration"
+                },
+                {
+                    "$ref": "#/definitions/TSInterfaceDeclaration"
                 },
                 {
                     "$ref": "#/definitions/TSModuleDeclarationGlobal"
@@ -7750,7 +6619,7 @@
                     "type": "boolean"
                 },
                 "type": {
-                    "$ref": "#/definitions/TSTypeAnnotation"
+                    "$ref": "#/definitions/Type"
                 }
             },
             "type": "object"
@@ -7781,9 +6650,6 @@
                 },
                 "optional": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -7980,9 +6846,6 @@
                 },
                 "override": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -8182,9 +7045,6 @@
                 },
                 "override": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -8386,9 +7246,6 @@
                 "optional": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -8546,36 +7403,6 @@
             },
             "type": "object"
         },
-        "PunctuatorToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Punctuator",
-                    "type": "string"
-                },
-                "value": {
-                    "$ref": "#/definitions/ValueOf_2"
-                }
-            },
-            "type": "object"
-        },
         "RegExp": {
             "properties": {
                 "dotAll": {
@@ -8585,6 +7412,9 @@
                     "type": "string"
                 },
                 "global": {
+                    "type": "boolean"
+                },
+                "hasIndices": {
                     "type": "boolean"
                 },
                 "ignoreCase": {
@@ -8613,9 +7443,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -8662,47 +7489,6 @@
             },
             "type": "object"
         },
-        "RegularExpressionToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "regex": {
-                    "properties": {
-                        "flags": {
-                            "type": "string"
-                        },
-                        "pattern": {
-                            "type": "string"
-                        }
-                    },
-                    "type": "object"
-                },
-                "type": {
-                    "const": "RegularExpression",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "RestElement": {
             "properties": {
                 "argument": {
@@ -8720,9 +7506,6 @@
                 },
                 "optional": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -8887,9 +7670,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -8922,9 +7702,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -8969,9 +7746,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -8996,7 +7770,7 @@
         "Statement": {
             "anyOf": [
                 {
-                    "$ref": "#/definitions/TSInterfaceDeclaration"
+                    "$ref": "#/definitions/FunctionDeclarationWithName"
                 },
                 {
                     "$ref": "#/definitions/BlockStatement"
@@ -9029,9 +7803,6 @@
                     "$ref": "#/definitions/ExportNamedDeclarationWithSource"
                 },
                 {
-                    "$ref": "#/definitions/FunctionDeclarationWithName"
-                },
-                {
                     "$ref": "#/definitions/TSDeclareFunctionNoDeclare"
                 },
                 {
@@ -9042,6 +7813,9 @@
                 },
                 {
                     "$ref": "#/definitions/TSImportEqualsDeclaration"
+                },
+                {
+                    "$ref": "#/definitions/TSInterfaceDeclaration"
                 },
                 {
                     "$ref": "#/definitions/TSModuleDeclarationGlobal"
@@ -9135,9 +7909,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -9164,9 +7935,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -9195,44 +7963,11 @@
             },
             "type": "object"
         },
-        "StringToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "String",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "Super": {
             "properties": {
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -9266,9 +8001,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -9436,9 +8168,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -9498,9 +8227,6 @@
                 },
                 "override": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -9575,9 +8301,6 @@
                 "override": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -9617,9 +8340,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -9683,9 +8403,6 @@
                 },
                 "override": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -9763,9 +8480,6 @@
                 "override": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -9839,9 +8553,6 @@
                 "override": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -9914,9 +8625,6 @@
                 "override": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -9956,9 +8664,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -9988,9 +8693,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -10022,9 +8724,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -10055,9 +8754,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -10085,9 +8781,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -10114,9 +8807,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -10150,9 +8840,6 @@
                         "$ref": "#/definitions/Parameter"
                     },
                     "type": "array"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -10189,9 +8876,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -10235,9 +8919,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -10273,9 +8954,6 @@
                         "$ref": "#/definitions/Parameter"
                     },
                     "type": "array"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -10318,9 +8996,6 @@
                         "$ref": "#/definitions/Parameter"
                     },
                     "type": "array"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -10392,9 +9067,6 @@
                         "$ref": "#/definitions/Parameter"
                     },
                     "type": "array"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -10470,9 +9142,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -10507,9 +9176,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -10569,9 +9235,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -10625,9 +9288,6 @@
                         "$ref": "#/definitions/TSEnumMember"
                     },
                     "type": "array"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -10801,9 +9461,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -10965,9 +9622,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -10998,9 +9652,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -11027,9 +9678,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -11060,9 +9708,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -11096,9 +9741,6 @@
                         "$ref": "#/definitions/Parameter"
                     },
                     "type": "array"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -11157,9 +9799,6 @@
                     ],
                     "description": "The value being aliased.\n```\nimport F1 = A;\nimport F2 = A.B.C;\nimport F3 = require('mod');\n```"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -11189,9 +9828,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "qualifier": {
                     "anyOf": [
@@ -11270,9 +9906,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -11315,9 +9948,6 @@
                 "objectType": {
                     "$ref": "#/definitions/TypeNode"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -11344,9 +9974,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -11380,9 +10007,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -11422,9 +10046,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -11472,9 +10093,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -11509,9 +10127,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -11545,9 +10160,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -11580,9 +10192,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -11641,9 +10250,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -11821,9 +10427,6 @@
                         false,
                         true
                     ]
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12034,9 +10637,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12108,9 +10708,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12155,9 +10752,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12207,9 +10801,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12257,9 +10848,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12310,9 +10898,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12361,9 +10946,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12420,9 +11002,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12459,9 +11038,6 @@
                 "optional": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12493,9 +11069,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12522,9 +11095,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12556,9 +11126,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12585,9 +11152,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12616,9 +11180,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12646,9 +11207,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12675,9 +11233,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12745,9 +11300,6 @@
                         }
                     ]
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12780,9 +11332,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12828,9 +11377,6 @@
                 },
                 "optional": {
                     "type": "boolean"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12886,9 +11432,6 @@
                 "optional": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12925,9 +11468,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -12954,9 +11494,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -12988,9 +11525,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13021,9 +11555,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13050,9 +11581,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -13087,9 +11615,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13120,9 +11645,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13149,9 +11671,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -13180,9 +11699,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13209,9 +11725,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "quasis": {
                     "items": {
@@ -13252,9 +11765,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13287,9 +11797,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -13326,9 +11833,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13364,9 +11868,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13399,9 +11900,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -13439,9 +11937,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13476,9 +11971,6 @@
                         "unique"
                     ],
                     "type": "string"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -13936,9 +12428,6 @@
                 "out": {
                     "type": "boolean"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -13972,9 +12461,6 @@
                     },
                     "type": "array"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -14007,9 +12493,6 @@
                         "$ref": "#/definitions/TypeNode"
                     },
                     "type": "array"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -14050,9 +12533,6 @@
                             "$ref": "#/definitions/TSThisType"
                         }
                     ]
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -14107,9 +12587,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -14142,9 +12619,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -14182,9 +12656,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -14211,9 +12682,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -14248,9 +12716,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -14278,9 +12743,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -14307,9 +12769,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "quasi": {
                     "$ref": "#/definitions/TemplateLiteral"
@@ -14349,9 +12808,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -14400,9 +12856,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "quasis": {
                     "items": {
                         "$ref": "#/definitions/TemplateElement"
@@ -14430,44 +12883,11 @@
             },
             "type": "object"
         },
-        "TemplateToken": {
-            "properties": {
-                "loc": {
-                    "$ref": "#/definitions/SourceLocation",
-                    "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "range": {
-                    "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
-                    "items": [
-                        {
-                            "type": "number"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ],
-                    "maxItems": 2,
-                    "minItems": 2,
-                    "type": "array"
-                },
-                "type": {
-                    "const": "Template",
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                }
-            },
-            "type": "object"
-        },
         "ThisExpression": {
             "properties": {
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -14495,7 +12915,7 @@
                 "argument": {
                     "anyOf": [
                         {
-                            "$ref": "#/definitions/TSInterfaceDeclaration"
+                            "$ref": "#/definitions/FunctionDeclarationWithName"
                         },
                         {
                             "$ref": "#/definitions/BlockStatement"
@@ -14531,9 +12951,6 @@
                             "$ref": "#/definitions/ExportNamedDeclarationWithSource"
                         },
                         {
-                            "$ref": "#/definitions/FunctionDeclarationWithName"
-                        },
-                        {
                             "$ref": "#/definitions/TSDeclareFunctionNoDeclare"
                         },
                         {
@@ -14544,6 +12961,9 @@
                         },
                         {
                             "$ref": "#/definitions/TSImportEqualsDeclaration"
+                        },
+                        {
+                            "$ref": "#/definitions/TSInterfaceDeclaration"
                         },
                         {
                             "$ref": "#/definitions/TSModuleDeclarationGlobal"
@@ -14632,9 +13052,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -14655,49 +13072,6 @@
                 }
             },
             "type": "object"
-        },
-        "Token": {
-            "anyOf": [
-                {
-                    "$ref": "#/definitions/BlockComment"
-                },
-                {
-                    "$ref": "#/definitions/BooleanToken"
-                },
-                {
-                    "$ref": "#/definitions/LineComment"
-                },
-                {
-                    "$ref": "#/definitions/IdentifierToken"
-                },
-                {
-                    "$ref": "#/definitions/JSXIdentifierToken"
-                },
-                {
-                    "$ref": "#/definitions/JSXTextToken"
-                },
-                {
-                    "$ref": "#/definitions/KeywordToken"
-                },
-                {
-                    "$ref": "#/definitions/NullToken"
-                },
-                {
-                    "$ref": "#/definitions/NumericToken"
-                },
-                {
-                    "$ref": "#/definitions/PunctuatorToken"
-                },
-                {
-                    "$ref": "#/definitions/RegularExpressionToken"
-                },
-                {
-                    "$ref": "#/definitions/StringToken"
-                },
-                {
-                    "$ref": "#/definitions/TemplateToken"
-                }
-            ]
         },
         "TryStatement": {
             "properties": {
@@ -14728,9 +13102,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -14748,6 +13119,14 @@
                 "type": {
                     "const": "TryStatement",
                     "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Type": {
+            "properties": {
+                "#annotation": {
+                    "$ref": "#/definitions/TSTypeAnnotation"
                 }
             },
             "type": "object"
@@ -14937,9 +13316,6 @@
                     ],
                     "type": "string"
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "prefix": {
                     "type": "boolean"
                 },
@@ -14979,9 +13355,6 @@
                         "--"
                     ],
                     "type": "string"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "prefix": {
                     "type": "boolean"
@@ -15033,9 +13406,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -15072,9 +13442,6 @@
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
                 },
-                "parent": {
-                    "$ref": "#/definitions/Node"
-                },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
                     "items": [
@@ -15110,9 +13477,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -15160,9 +13524,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -15235,72 +13596,6 @@
             ],
             "type": "string"
         },
-        "ValueOf_2": {
-            "enum": [
-                "!",
-                "!=",
-                "!==",
-                "#",
-                "%",
-                "%=",
-                "&",
-                "&&",
-                "&&=",
-                "&=",
-                "(",
-                ")",
-                "*",
-                "**",
-                "**=",
-                "*=",
-                "+",
-                "++",
-                "+=",
-                ",",
-                "-",
-                "--",
-                "-=",
-                ".",
-                "...",
-                "/",
-                "/=",
-                ":",
-                ";",
-                "<",
-                "</",
-                "<<",
-                "<<=",
-                "<=",
-                "=",
-                "==",
-                "===",
-                "=>",
-                ">",
-                ">=",
-                ">>",
-                ">>=",
-                ">>>",
-                ">>>=",
-                "?",
-                "?.",
-                "??",
-                "??=",
-                "@",
-                "[",
-                "]",
-                "^",
-                "^=",
-                "`",
-                "{",
-                "|",
-                "|=",
-                "||",
-                "||=",
-                "}",
-                "~"
-            ],
-            "type": "string"
-        },
         "WhileStatement": {
             "properties": {
                 "body": {
@@ -15309,9 +13604,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -15348,9 +13640,6 @@
                 },
                 "object": {
                     "$ref": "#/definitions/Expression"
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",
@@ -15508,9 +13797,6 @@
                 "loc": {
                     "$ref": "#/definitions/SourceLocation",
                     "description": "The source location information of the node.\n\nThe loc property is defined as nullable by ESTree, but ESLint requires this property."
-                },
-                "parent": {
-                    "$ref": "#/definitions/Node"
                 },
                 "range": {
                     "description": "An array of two numbers.\nBoth numbers are a 0-based index which is the position in the array of source code characters.\nThe first is the start position of the node, the second is the end position of the node.",

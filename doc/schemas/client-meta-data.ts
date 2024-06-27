@@ -1,8 +1,32 @@
-import { TSESTree as t } from '@typescript-eslint/utils';
+// TODO: remove TSESTree possible?
+import { FunctionDeclaration, TSTypeAnnotation } from '@typescript-eslint/types/dist/generated/ast-spec';
 
-// TODO: impl our own interface/type?
-export type Interface = t.TSInterfaceDeclaration;
-export type Type = t.TSTypeAnnotation;
+export interface EqualsTo {
+  equalsTo<T>(other: T): boolean;
+}
+export class Interface implements EqualsTo {
+  #declaration: FunctionDeclaration;
+  constructor(declaration: FunctionDeclaration) {
+    this.#declaration = declaration;
+  }
+
+  equalsTo<Interface>(other: Interface): boolean {
+    // const _ = this.#declaration;
+    throw new Error('Not implemented');
+  }
+}
+
+export class Type implements EqualsTo {
+  #annotation: TSTypeAnnotation;
+  constructor(annotation: TSTypeAnnotation) {
+    this.#annotation = annotation;
+  }
+
+  equalsTo<Type>(other: Type): boolean {
+    // const _ = this.#annotation;
+    throw new Error('Not implemented');
+  }
+}
 
 export interface Property {
   name: string;
@@ -12,6 +36,7 @@ export interface Property {
 
 export interface Operation {
   name: string;
+  path: string | null;
   parameters: Property[];
   responses: { [id: string]: Interface };
 }
