@@ -19,7 +19,7 @@
     "prettier-watch:win32": "onchange \"src/**/*.ts\" -- prettier --write {{changed}}",
     "prettier-watch:darwin:linux": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
     "prettier-watch:default": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
-    "json-schema:generate": "typescript-json-schema doc/schemas/tsconfig.json ClientMetaData --out doc/schemas/client-meta-data.schema.json"
+    "generate:context:azure": "typescript-json-schema doc/schemas/tsconfig.json * --out doc/schemas/azure.context.schema.json"
   },
   "author": "",
   "license": "ISC",

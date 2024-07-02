@@ -8,6 +8,6 @@
         "forceConsistentCasingInFileNames": true
     },
     "include": [
-        "client-meta-data.ts"
+        "./**/*.ts"
     ]
 }

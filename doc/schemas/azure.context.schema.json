@@ -1,0 +1,274 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "AzureMethod": {
+            "properties": {
+                "equalsTo": {
+                    "type": "object"
+                },
+                "getLocation": {
+                    "type": "object"
+                },
+                "getName": {
+                    "type": "object"
+                },
+                "getNode": {
+                    "type": "object"
+                },
+                "getOptional": {
+                    "type": "object"
+                },
+                "getParameters": {
+                    "type": "object"
+                },
+                "getReadonly": {
+                    "type": "object"
+                },
+                "getResponses": {
+                    "type": "object"
+                },
+                "getSignature": {
+                    "type": "object"
+                },
+                "getStatic": {
+                    "type": "object"
+                },
+                "path": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "AzureOperation": {
+            "properties": {
+                "equalsTo": {
+                    "type": "object"
+                },
+                "getLocation": {
+                    "type": "object"
+                },
+                "getName": {
+                    "type": "object"
+                },
+                "getNode": {
+                    "type": "object"
+                },
+                "getOptional": {
+                    "type": "object"
+                },
+                "getParameters": {
+                    "type": "object"
+                },
+                "getReadonly": {
+                    "type": "object"
+                },
+                "getResponses": {
+                    "type": "object"
+                },
+                "getSignature": {
+                    "type": "object"
+                },
+                "getStatic": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "AzureProjectContext": {
+            "properties": {
+                "equalsTo": {
+                    "type": "object"
+                },
+                "getClient": {
+                    "type": "object"
+                },
+                "getLocation": {
+                    "type": "object"
+                },
+                "getName": {
+                    "type": "object"
+                },
+                "getNode": {
+                    "type": "object"
+                },
+                "getOperationGroups": {
+                    "type": "object"
+                },
+                "getOperations": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "ClientType": {
+            "enum": [
+                0,
+                1,
+                2
+            ],
+            "type": "number"
+        },
+        "Location": {
+            "properties": {
+                "getOrder": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "Method": {
+            "properties": {
+                "equalsTo": {
+                    "type": "object"
+                },
+                "getLocation": {
+                    "type": "object"
+                },
+                "getName": {
+                    "type": "object"
+                },
+                "getNode": {
+                    "type": "object"
+                },
+                "getOptional": {
+                    "type": "object"
+                },
+                "getParameters": {
+                    "type": "object"
+                },
+                "getReadonly": {
+                    "type": "object"
+                },
+                "getResponses": {
+                    "type": "object"
+                },
+                "getSignature": {
+                    "type": "object"
+                },
+                "getStatic": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "Operation": {
+            "properties": {
+                "equalsTo": {
+                    "type": "object"
+                },
+                "getLocation": {
+                    "type": "object"
+                },
+                "getName": {
+                    "type": "object"
+                },
+                "getNode": {
+                    "type": "object"
+                },
+                "getOptional": {
+                    "type": "object"
+                },
+                "getParameters": {
+                    "type": "object"
+                },
+                "getReadonly": {
+                    "type": "object"
+                },
+                "getResponses": {
+                    "type": "object"
+                },
+                "getSignature": {
+                    "type": "object"
+                },
+                "getStatic": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "OperationGroup": {
+            "properties": {
+                "equalsTo": {
+                    "type": "object"
+                },
+                "getLocation": {
+                    "type": "object"
+                },
+                "getName": {
+                    "type": "object"
+                },
+                "getNode": {
+                    "type": "object"
+                },
+                "getOperations": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "Parameter": {
+            "properties": {
+                "equalsTo": {
+                    "type": "object"
+                },
+                "getLocation": {
+                    "type": "object"
+                },
+                "getName": {
+                    "type": "object"
+                },
+                "getNode": {
+                    "type": "object"
+                },
+                "getOptional": {
+                    "type": "object"
+                },
+                "getReadonly": {
+                    "type": "object"
+                },
+                "getStatic": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "ProjectContext": {
+            "properties": {
+                "equalsTo": {
+                    "type": "object"
+                },
+                "getClient": {
+                    "type": "object"
+                },
+                "getLocation": {
+                    "type": "object"
+                },
+                "getName": {
+                    "type": "object"
+                },
+                "getNode": {
+                    "type": "object"
+                },
+                "getOperations": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "RawNode": {
+            "properties": {
+                "equalsTo": {
+                    "type": "object"
+                },
+                "getLocation": {
+                    "type": "object"
+                },
+                "getNode": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        }
+    }
+}
+
