@@ -1,6 +1,4 @@
 export type Property<TNode> = Interface<TNode>;
-export type Parameter<TNode> = Interface<TNode>;
-export type Response<TNode> = Interface<TNode>;
 export type Operation<TNode> = Method<TNode>;
 
 export interface RawNode<TNode> {
@@ -20,9 +18,17 @@ export interface Modifiers {
 
 export interface Interface<TNode> extends Node<TNode>, Modifiers {}
 
-export interface Method<TNode> extends Node<TNode>, Modifiers {
+export interface Request<TNode> extends Interface<TNode> {
+  getParameters: () => { [id: string]: Property<TNode> };
+}
+
+export interface Response<TNode> extends Interface<TNode> { 
+  getParameters: () => { [id: string]: Property<TNode> };
+}
+
+export interface Method<TNode> extends Interface<TNode> {
   getSignature: () => string;
-  getParameters: () => { [id: string]: Parameter<TNode> };
+  getRequests: () => { [id: string]: Request<TNode> };
   getResponses: () => { [id: string]: Response<TNode> };
 }
 

@@ -1,16 +1,4 @@
-import { Program } from './context.types';
-
-export enum RuleType {
-  /** The change is regarded as breaking change */
-  Breaking,
-  /** The change is regarded as non-breaking change */
-  NonBreaking
-}
-
-export interface RuleContext<I extends ReportItems, TNode> {
-  readonly program: Program<TNode>;
-  reportItem<M extends keyof I>(diag: RuleReportItem<I, M>): void;
-}
+THE9import { Program } from './context.types';
 
 export interface RuleDefinition<N extends string, I extends ReportItems, TNode> {
   /** Rule name (without the library name) */
@@ -33,6 +21,20 @@ export function createRule<const N extends string, const T extends ReportItems, 
   // compilerAssert(!definition.name.includes('/'), "Rule name cannot contain a '/'.");
   return definition;
 }
+
+export enum RuleType {
+  /** The change is regarded as breaking change */
+  Breaking,
+  /** The change is regarded as non-breaking change */
+  NonBreaking
+}
+
+export interface RuleContext<I extends ReportItems, TNode> {
+  readonly program: Program<TNode>;
+  reportItem<M extends keyof I>(diag: RuleReportItem<I, M>): void;
+}
+
+
 
 export interface DetectionDefinition<TNode> {
   rules: RuleDefinition<string, ReportItems, TNode>[];
