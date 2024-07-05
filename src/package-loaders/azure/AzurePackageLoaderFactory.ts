@@ -9,7 +9,7 @@ import { DefaultApiDocumentCodeExtractor } from '../api-document-code-extractors
 import { AzureRestLevelClientVersionGenerator } from '../../package-version-generators/azure/AzureRestLevelClientVersionGenerator';
 import { AzureRestLevelClientPackageLoader } from './AzureRestLevelClientPackageLoader';
 import { version } from '@typescript-eslint/parser';
-import { AzureRestLevelClientApiRelationGenerator } from '../../changelog-generators/api-relation-generators/azure/AzureRestLevelClientApiRelationGenerator';
+import { AzureRestLevelClientApiRelationGenerator } from '../../changelog-generators/program-builders/azure/AzureProgramBuiler';
 
 export class AzurePackageLoaderFactory implements PackageLoaderFactory {
   constructor() {}

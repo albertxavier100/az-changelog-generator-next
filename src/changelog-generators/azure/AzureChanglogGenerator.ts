@@ -1,7 +1,7 @@
 import { SDKType } from '../../common/SDKType';
 import { AzurePackageLoaderFactory } from '../../package-loaders/azure/AzurePackageLoaderFactory';
 import { AzurePackageContext } from '../../package-loaders/contexts/azure/AzurePackageContext';
-import { AzureRestLevelClientApiRelationGenerator } from '../api-relation-generators/azure/AzureRestLevelClientApiRelationGenerator';
+import { AzureRestLevelClientApiRelationGenerator } from '../program-builders/azure/AzureProgramBuiler';
 
 // TODO: add interface
 export class AzureChanglogGenerator {

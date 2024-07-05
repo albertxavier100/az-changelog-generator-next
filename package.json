@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "packageManager": "pnpm@9.2.0",
   "scripts": {
     "build": "rimraf ./build && tsc",
     "start:dev": "nodemon src/index.ts",

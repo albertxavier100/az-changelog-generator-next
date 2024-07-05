@@ -11,6 +11,17 @@
         "restart": true,
         "runtimeExecutable": "ts-node",
         "type": "node"
+      },
+      {
+        "name": "test:e2e:rlc2rlc",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "program": "${workspaceFolder}/src/index.ts",
+        "args":["--latest-package-root", "./src/tests/e2e/cases/rest-level-client-to-rest-level-client/latest-package", "--upcoming-package-root", "./src/tests/e2e/cases/rest-level-client-to-rest-level-client/upcoming-package"],
+        "request": "launch",
+        "restart": true,
+        "runtimeExecutable": "ts-node",
+        "type": "node"
       }
     ]
   }
